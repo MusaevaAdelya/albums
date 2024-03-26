@@ -7,7 +7,7 @@ ROOT.innerHTML = ``;
 function displayAlbum({ id, title }) {
   let album = document.createElement("a");
   album.className = "album";
-  album.setAttribute("href", `/photos.html?id=${id}`);
+  album.setAttribute("href", `photos.html?id=${id}`);
   album.innerHTML = `<span>${id}. ${title}</span>`;
   return album;
 }
