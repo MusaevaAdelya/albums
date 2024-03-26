@@ -33,7 +33,7 @@ const url = window.location.href;
 
 const queryParams = new URLSearchParams(new URL(url).search);
 
-const id = queryParams.get("id");
+const id = queryParams.get("id")??1;
 
 const title = document.querySelector(".title");
 title.textContent = `Album #${id}`;
